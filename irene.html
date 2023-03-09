@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            position: relative;
+            width: 100%;
+            height: 100px;
+            border: 2px solid blue;
+            background-color: goldenrod;
+            color:#6218c9;
+            padding: 0;
+        }
+        .app-header-navigation{
+            float: left;
+            height: 100%;
+            width: 80px;
+        }
+
+        .search-field{
+            float: left;
+            width: 100px;
+            height: 100%;
+        
+            
+        }
+        .main{
+            margin: 0;
+            margin-left: 0;
+           display: flex;
+            width: 100%;
+            height: 1000px;
+            border: 2px solid rgb(87, 88, 87);
+            background-color: gainsboro;
+
+        
+        }
+        .sidebar{
+            margin: 0;
+            width: 15%;
+            height: 800px;
+            border: 2px solid rgb(207, 156, 53);
+            background-color: goldenrod;
+        }
+        a{
+            display: block;
+            justify-content: space-evenly;
+            margin: 3px;
+            color: whitesmoke;
+            font-size: 1.8em;
+        }
+        a:hover{
+        
+            color:black;
+        }
+        .content{
+            float: left;
+            margin-left: 10px;
+            width: 85%;
+            height: 800px;
+            border: 2px solid rgb(214, 211, 211);
+            border-radius: 15px;
+        }
+        .card-container{
+            display: flex;
+            width: 15%;
+            height: 30px;
+            box-shadow: rgb(138, 133, 133);
+
+        }
+        .cards{
+            
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px rgba(52, 53, 53, 0.751);
+            padding: 0px 20px 20px 20px;
+            margin-top: 10px;
+            display: flex;
+            margin: 30px;
+            color: rgb(15, 13, 13);
+            background-color:  rgb(209, 203, 203);
+            justify-content: space-evenly;
+        }
+        
+        .report-container {
+  height: 300px;
+  width: 1000px;
+  margin: 250px auto 0px auto;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgb(188, 188, 188);
+  padding: 0px 20px 20px 20px;
+  
+}
+.report-header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  border-bottom: 2px solid rgba(0, 20, 151, 0.59);
+}
+ 
+.recent-Articles {
+  font-size: 30px;
+  font-weight: 600;
+  color: #5500cb;
+}
+ 
+.view {
+  height: 35px;
+  width: 90px;
+  border-radius: 8px;
+  background-color: #5500cb;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+ 
+.report-body {
+  max-width: 1200px;
+  overflow-x: auto;
+  padding: 20px;
+}
+.report-topic-heading,
+.item1 {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.t-op {
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+ 
+.items {
+  width: 1200px;
+  margin-top: 15px;
+}
+ 
+.item1 {
+  margin-top: 20px;
+}
+.t-op-nextlvl {
+  font-size: 13px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+ 
+
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="app-header-logo">
+			<div class="logo">
+				<span class="logo-icon">
+					
+				</span>
+				<h1 class="logo-title">
+					<span>shalom</span>
+					<span>beauty palour</span>
+				</h1>
+			</div>
+		</div>
+		<div class="app-header-navigation">
+			<div class="tabs">
+				<a href="#">
+					Overview
+				</a>
+                <div class="search-field">
+                    <i class="ph-magnifying-glass"></i>
+                    <input type="text" placeholder="search here">
+                </div>
+               
+            </div>
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <div>
+                <a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                <span class="nav-item" >home</span></a>&nbsp&nbsp
+
+                <a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+                    <span class="nav-item" >profile</span></a>&nbsp&nbsp
+</div>
+                <a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>
+                    <span class="nav-item" >settings</span></a>&nbsp&nbsp
+
+                    <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i>
+                        <span class="nav-item" >notifications</span></a>&nbsp&nbsp
+
+                        <a href="#"><i class="fa fa-comment" aria-hidden="true"></i>
+                            <span class="nav-item" >comments</span></a>&nbsp&nbsp
+                                
+                            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                                <span class="nav-item" >logout</span></a>
+                               
+
+        </div>
+        <div class="content">
+
+            <div class="card-container">
+                <div class="cards">
+                    <div class="text">
+                        <h2 class="topic-heading">60.5k</h2>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <h2 class="topic">users</h2>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="cards">
+                    <div class="text">
+                        <h2 class="topic-heading">65k</h2>
+                        <i class="fa fa-street-view" aria-hidden="true"></i>
+                        <h2 class="topic">views</h2>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="cards">
+                        <div class="text">
+                        <h2 class="topic-heading">60k</h2>
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                        <h2 class="topic">bookings</h2>
+                </div>
+            </div>
+            
+            </div>
+            <div class="report-container">
+                <div class="report-header">
+                    <h1 class="recent-views">bookings view</h1>
+                    <button class="view">View All</button>
+                </div>
+ 
+                <div class="report-body">
+                    <div class="report-topic-heading">
+                        <h2 class="t-op">new styles</h2>
+                        <h2 class="t-op">status View</h2>
+                        <h2 class="t-op">no.of bookings</h2>
+                        <h2 class="t-op">date</h2>
+                    </div>
+ 
+                    <div class="items">
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">new chrochet73</h3>
+                            <h3 class="t-op-nextlvl">2.9k</h3>
+                            <h3 class="t-op-nextlvl">25</h3>
+                            <h3 class="t-op-nextlvl ">08/march/2023</h3>
+                        </div>
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">new bridals</h3>
+                            <h3 class="t-op-nextlvl">2.0k</h3>
+                            <h3 class="t-op-nextlvl">27</h3>
+                            <h3 class="t-op-nextlvl ">20/march</h3>
+                        </div>
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">new makeup</h3>
+                            <h3 class="t-op-nextlvl">2.2k</h3>
+                            <h3 class="t-op-nextlvl">21</h3>
+                            <h3 class="t-op-nextlvl">22/march</h3>
+                        </div>
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">new wievs</h3>
+                            <h3 class="t-op-nextlvl">2.4k</h3>
+                            <h3 class="t-op-nextlvl">20</h3>
+                            <h3 class="t-op-nextlvl ">24/march</h3>
+                        </div> <div class="item1">
+                            <h3 class="t-op-nextlvl">new afro</h3>
+                            <h3 class="t-op-nextlvl">1.8k</h3>
+                            <h3 class="t-op-nextlvl">12</h3>
+                            <h3 class="t-op-nextlvl ">25/march</h3>
+                        </div> <div class="item1">
+                            <h3 class="t-op-nextlvl">new chrochet ff</h3>
+                            <h3 class="t-op-nextlvl">2.8k</h3>
+                            <h3 class="t-op-nextlvl">40</h3>
+                            <h3 class="t-op-nextlvl ">28/march</h3>
+                        </div>
+ 
+ 
+ 
+ 
+ 
+ 
+        </div>
+        
+      
+        
+    </div>
+</body>
+</html>
